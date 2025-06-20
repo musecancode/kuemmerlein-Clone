@@ -1,7 +1,7 @@
 function Hero() {
   return (
     <section id="hero-section" className="relative w-full h-[calc(100vh-1rem)]">
-      {/* Hero background with rounded corners except bottom-right */}
+      {/* Hero background*/}
       <div
         className="w-full h-full relative overflow-hidden rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl bg-cover bg-center flex items-center justify-start px-6 md:px-12 lg:px-24"
         style={{
@@ -23,7 +23,6 @@ function Hero() {
         </div>
       </div>
 
-      {/* Rounded white cutout in bottom-right corner */}
       <div className="absolute bottom-0 right-0 w-24 h-24 bg-white rounded-tl-3xl z-20 flex items-center justify-center">
         <div className="w-20 h-20 bg-[#f7f788] rounded-full"></div>
       </div>

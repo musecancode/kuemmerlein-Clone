@@ -26,22 +26,17 @@ function EthicsShowcase() {
       const rect = container.getBoundingClientRect();
       const viewportHeight = window.innerHeight;
 
-      // Check if we're within the ethics section
       if (rect.top <= 0 && rect.bottom > viewportHeight) {
         const currentScrollY = window.scrollY;
 
-        // Clear existing timeout
         if (scrollTimeout.current) {
           clearTimeout(scrollTimeout.current);
         }
 
-        // Debounce scroll events
         scrollTimeout.current = setTimeout(() => {
           if (currentScrollY > lastScrollY.current) {
-            // Scrolling DOWN - show NEXT ethics
             setCurrentIndex((prev) => Math.min(prev + 1, ethics.length - 1));
           } else if (currentScrollY < lastScrollY.current) {
-            // Scrolling UP - show PREVIOUS ethics
             setCurrentIndex((prev) => Math.max(prev - 1, 0));
           }
 
@@ -61,12 +56,9 @@ function EthicsShowcase() {
 
   return (
     <div ref={containerRef} className="relative" style={{ height: `120vh` }}>
-      {/* Fixed Yellow Section - This stays in place */}
       <div className="sticky top-0 left-0 w-full h-screen bg-[#fdfd84] overflow-hidden rounded-[40px] rounded-tr-[400px] z-10 mt-28">
-        {/* White Circle */}
         <div className="absolute right-[60px] top-[60px] w-[400px] h-[400px] bg-white rounded-full"></div>
 
-        {/* Animated Text */}
         <div className="absolute left-16 top-1/2 transform -translate-y-1/2 max-w-xl">
           <AnimatePresence mode="wait">
             <motion.h2
@@ -84,7 +76,6 @@ function EthicsShowcase() {
             </motion.h2>
           </AnimatePresence>
 
-          {/* Progress Dots */}
           <div className="mt-12 flex space-x-4">
             {ethics.map((_, index) => (
               <motion.div
@@ -101,13 +92,11 @@ function EthicsShowcase() {
             ))}
           </div>
 
-          {/* Position Counter */}
           <div className="mt-8 text-black/70 text-lg font-medium">
             {currentIndex + 1} of {ethics.length}
           </div>
         </div>
 
-        {/* Scroll Instructions */}
         <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 text-center">
           <motion.div
             className="text-black/60 text-sm"
@@ -116,7 +105,6 @@ function EthicsShowcase() {
           ></motion.div>
         </div>
 
-        {/* Completion indicator */}
         {currentIndex === ethics.length - 1 && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}

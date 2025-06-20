@@ -30,7 +30,6 @@ export default function AwardsShowcase() {
 
       <div className="overflow-hidden relative">
         <div className="flex animate-scroll gap-6">
-          {/* Repeat images 4 times for continuous loop */}
           {[...Array(4)].map((_, repeatIdx) =>
             awardsImages.map((src, idx) => (
               <img

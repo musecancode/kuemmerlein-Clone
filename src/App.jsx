@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="min-h-screen font-sans relative">
       <Navbar />
-      {/* Shared layout wrapper for consistent spacing & rounded corners */}
+
       <div className="mx-2 mt-2 mb-2 md:mx-4 md:mt-2 md:mb-2 lg:mx-4 lg:my-2 rounded-3xl overflow-hidden bg-white">
         <Hero />
         <Benefit />

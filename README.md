@@ -1,12 +1,43 @@
-# React + Vite
+# KüMmerlein Website Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive front-end clone of the [Kümmerlein Rechtsanwälte & Notare](https://www.kuemmerlein.de/) official website. Built with **React**, **Vite**, and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Project Preview
 
-## Expanding the ESLint configuration
+![image](https://github.com/user-attachments/assets/0353a510-a6bb-471c-a330-14fa60b4ae4d)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![image](https://github.com/user-attachments/assets/267578ce-1a08-44fa-ae28-11d6ddfdab01)
+
+![image](https://github.com/user-attachments/assets/9fb624b3-9631-425a-9c00-9eaf8b5c356f)
+
+![image](https://github.com/user-attachments/assets/f48344f0-1ca5-4c4d-bf66-03bb8edd4bf1)
+
+---
+
+## Features
+
+- Modern React + Vite setup
+- Tailwind CSS for responsive styling
+- Custom SVG logo components
+
+
+---
+
+##  Tech Stack
+
+- **React**
+- **Vite**
+- **Tailwind CSS**
+- **JavaScript**
+
+
+---
+
+##  Getting Started
+
+1. **Clone the repository**
+2.  **Install dependencies**
+3.  **npm install**
+4.  4. **Run the development server**
